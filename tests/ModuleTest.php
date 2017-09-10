@@ -3,9 +3,9 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-namespace MSBiosTest\Guard\CPanel;
+namespace MSBiosTest\Doctrine;
 
-use MSBios\Guard\Resource\Module;
+use MSBios\Doctrine\Module;
 use PHPUnit\Framework\TestCase;
 
 /**
