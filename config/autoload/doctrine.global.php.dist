@@ -1,0 +1,16 @@
+<?php
+
+return [
+    'doctrine' => [
+        'connection' => [
+            'orm_default' => [
+                'params' => [
+                    'host' => '',
+                    'user' => '',
+                    'password' => '',
+                    'dbname' => '',
+                ],
+            ],
+        ],
+    ],
+];
