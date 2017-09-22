@@ -3,6 +3,7 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
+
 namespace MSBios\Doctrine;
 
 return [
@@ -11,7 +12,8 @@ return [
         'configuration' => [
             'orm_default' => [
                 'types' => [
-                    // Some Custom Types
+                    DBAL\Types\ArrayResolverType::NAME =>
+                        DBAL\Types\ArrayResolverType::class
                 ],
                 'datetime_functions' => [
                     'date' => ORM\Query\AST\Functions\DateFunction::class,
@@ -32,9 +34,6 @@ return [
                 'driverClass' => \Doctrine\DBAL\Driver\PDOMySql\Driver::class,
                 'params' => [
                     'host' => 'localhost',
-                    'user' => '',
-                    'password' => '',
-                    'dbname' => '',
                     'charset' => 'utf8',
                     'driverOptions' => [
                         \PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
@@ -42,14 +41,6 @@ return [
                 ]
             ],
         ],
-        'driver' => [
-            // default metadata driver, aggregates all other drivers into a single one.
-            // Override `orm_default` only if you know what you're doing
-            'orm_default' => [
-                'drivers' => [
-                ]
-            ]
-        ]
     ],
 
     Module::class => [
