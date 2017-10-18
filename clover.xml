@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1508319120">
+  <project timestamp="1508319120">
+    <package name="MSBios\Doctrine\DBAL\Types">
+      <file name="/home/judzhin/Projects/_modules/msbios-doctrine/src/DBAL/Types/ArrayResolverType.php">
+        <class name="ArrayResolverType" namespace="MSBios\Doctrine\DBAL\Types" fullPackage="MSBios" package="MSBios">
+          <metrics complexity="5" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="19" coveredelements="0"/>
+        </class>
+        <line num="28" type="method" name="getName" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="40" type="method" name="convertToDatabaseValue" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="56" type="method" name="convertToPHPValue" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="63" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="66" type="stmt" count="0"/>
+        <metrics loc="67" ncloc="36" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="19" coveredelements="0"/>
+      </file>
+      <file name="/home/judzhin/Projects/_modules/msbios-doctrine/src/DBAL/Types/EnumType.php">
+        <class name="EnumType" namespace="MSBios\Doctrine\DBAL\Types" fullPackage="MSBios" package="MSBios">
+          <metrics complexity="5" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="14" coveredelements="0"/>
+        </class>
+        <line num="32" type="method" name="getSQLDeclaration" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="method" name="anonymousFunction:36#114" complexity="1" crap="2" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="48" type="method" name="convertToDatabaseValue" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <metrics loc="55" ncloc="31" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="0" elements="17" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="MSBios\Doctrine\DBAL\Types\Exception">
+      <file name="/home/judzhin/Projects/_modules/msbios-doctrine/src/DBAL/Types/Exception/InvalidArgumentException.php">
+        <class name="InvalidArgumentException" namespace="MSBios\Doctrine\DBAL\Types\Exception" fullPackage="MSBios" package="MSBios">
+          <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+        </class>
+        <metrics loc="16" ncloc="6" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </file>
+    </package>
+    <package name="MSBios\Doctrine">
+      <file name="/home/judzhin/Projects/_modules/msbios-doctrine/src/Module.php">
+        <class name="Module" namespace="MSBios\Doctrine" fullPackage="MSBios" package="MSBios">
+          <metrics complexity="3" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="2" elements="13" coveredelements="3"/>
+        </class>
+        <line num="29" type="method" name="getConfig" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="40" type="method" name="onBootstrap" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="61" type="method" name="getAutoloaderConfig" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="64" type="stmt" count="1"/>
+        <line num="65" type="stmt" count="1"/>
+        <metrics loc="71" ncloc="45" classes="1" methods="3" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="2" elements="13" coveredelements="3"/>
+      </file>
+    </package>
+    <package name="MSBios\Doctrine\ORM\Query\AST\Functions">
+      <file name="/home/judzhin/Projects/_modules/msbios-doctrine/src/ORM/Query/AST/Functions/ConcatWSFunction.php">
+        <class name="ConcatWSFunction" namespace="MSBios\Doctrine\ORM\Query\AST\Functions" fullPackage="MSBios" package="MSBios">
+          <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="0" elements="23" coveredelements="0"/>
+        </class>
+        <line num="32" type="method" name="getSql" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="47" type="method" name="parse" visibility="public" complexity="2" crap="6" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <metrics loc="62" ncloc="42" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="0" elements="23" coveredelements="0"/>
+      </file>
+      <file name="/home/judzhin/Projects/_modules/msbios-doctrine/src/ORM/Query/AST/Functions/DateFunction.php">
+        <class name="DateFunction" namespace="MSBios\Doctrine\ORM\Query\AST\Functions" fullPackage="MSBios" package="MSBios">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+        </class>
+        <line num="24" type="method" name="getSql" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="31" type="method" name="parse" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <metrics loc="38" ncloc="23" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+      </file>
+      <file name="/home/judzhin/Projects/_modules/msbios-doctrine/src/ORM/Query/AST/Functions/DayFunction.php">
+        <class name="DayFunction" namespace="MSBios\Doctrine\ORM\Query\AST\Functions" fullPackage="MSBios" package="MSBios">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+        </class>
+        <line num="24" type="method" name="getSql" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="31" type="method" name="parse" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <metrics loc="38" ncloc="23" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+      </file>
+      <file name="/home/judzhin/Projects/_modules/msbios-doctrine/src/ORM/Query/AST/Functions/GeoFunction.php">
+        <class name="GeoFunction" namespace="MSBios\Doctrine\ORM\Query\AST\Functions" fullPackage="MSBios" package="MSBios">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="0" elements="33" coveredelements="0"/>
+        </class>
+        <line num="28" type="method" name="getSql" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="47" type="stmt" count="0"/>
+        <line num="51" type="method" name="parse" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="63" type="stmt" count="0"/>
+        <metrics loc="64" ncloc="47" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="0" elements="33" coveredelements="0"/>
+      </file>
+      <file name="/home/judzhin/Projects/_modules/msbios-doctrine/src/ORM/Query/AST/Functions/MonthFunction.php">
+        <class name="MonthFunction" namespace="MSBios\Doctrine\ORM\Query\AST\Functions" fullPackage="MSBios" package="MSBios">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+        </class>
+        <line num="25" type="method" name="getSql" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="32" type="method" name="parse" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <metrics loc="39" ncloc="24" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+      </file>
+      <file name="/home/judzhin/Projects/_modules/msbios-doctrine/src/ORM/Query/AST/Functions/YearFunction.php">
+        <class name="YearFunction" namespace="MSBios\Doctrine\ORM\Query\AST\Functions" fullPackage="MSBios" package="MSBios">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+        </class>
+        <line num="25" type="method" name="getSql" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="33" type="method" name="parse" visibility="public" complexity="1" crap="2" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <metrics loc="40" ncloc="25" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="10" loc="490" ncloc="302" classes="9" methods="21" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="128" coveredstatements="2" elements="149" coveredelements="3"/>
+  </project>
+</coverage>
