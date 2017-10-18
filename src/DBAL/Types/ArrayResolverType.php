@@ -1,22 +1,19 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: judzhin
- * Date: 9/22/17
- * Time: 7:12 PM
+ * @access protected
+ * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-
 namespace MSBios\Doctrine\DBAL\Types;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
-use Doctrine\DBAL\Types\JsonArrayType;
+use Doctrine\DBAL\Types\JsonType;
 use MSBios\Json\Store;
 
 /**
  * Class ArrayResolverType
  * @package MSBios\Doctrine\DBAL\Types
  */
-class ArrayResolverType extends JsonArrayType
+class ArrayResolverType extends JsonType
 {
     /** @const NAME */
     const NAME = 'array_resolver';
@@ -35,6 +32,10 @@ class ArrayResolverType extends JsonArrayType
 
     /**
      * {@inheritdoc}
+     *
+     * @param mixed $value
+     * @param AbstractPlatform $platform
+     * @return mixed|null|string
      */
     public function convertToDatabaseValue($value, AbstractPlatform $platform)
     {
@@ -47,24 +48,20 @@ class ArrayResolverType extends JsonArrayType
 
     /**
      * {@inheritdoc}
+     *
+     * @param mixed $value
+     * @param AbstractPlatform $platform
+     * @return Store
      */
     public function convertToPHPValue($value, AbstractPlatform $platform)
     {
-        // /** @var array $data */
-        // $data = parent::convertToPHPValue($value, $platform);
-        //
-        // /** @var array $arr */
-        // $arr = [];
-        //
-        // foreach ($data as $key => $value) {
-        //     $object = new ArrayObject($value);
-        //     $arr[] = $object;
-        // }
-        //
-        // return $arr;
+        /** @var array $data */
+        $data = parent::convertToPHPValue($value, $platform);
 
-        return new Store(
-            parent::convertToPHPValue($value, $platform)
-        );
+        if (! is_array($data)) {
+            $data = [];
+        }
+
+        return new Store($data);
     }
 }

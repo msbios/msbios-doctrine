@@ -28,7 +28,14 @@ class GeoFunction extends FunctionNode
     public function getSql(SqlWalker $sqlWalker)
     {
         return sprintf(
-            '%s * ASIN(SQRT(POWER(SIN((%s - %s) * PI()/360), 2) + COS(%s * PI()/180) * COS(%s * PI()/180) * POWER(SIN((%s - %s) *  PI()/360), 2)))',
+            '%s * ASIN(
+                SQRT(
+                    POWER(SIN((%s - %s) * PI()/360), 2) + 
+                    COS(%s * PI()/180) * 
+                    COS(%s * PI()/180) *
+                    POWER(SIN((%s - %s) * PI()/360), 2)
+                )
+            )',
             self::EARTH_DIAMETER,
             $sqlWalker->walkArithmeticPrimary($this->latOrigin),
             $sqlWalker->walkArithmeticPrimary($this->latDestination),
