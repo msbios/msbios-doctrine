@@ -26,8 +26,8 @@
   "require": {
     "doctrine/doctrine-orm-module": "^1.1",
     "msbios/msbios": "~1.0",
-    "msbios/stdlib": "^1.0",
-    "msbios/json": "^1.0"
+    "msbios/stdlib": "~1.0",
+    "msbios/json": "~1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.7",
@@ -40,10 +40,17 @@
     "cs-fix": "phpcbf",
     "test": [
       "@cs-check",
-      "phpunit"
+      "phpunit --colors=always"
     ],
     "cleanup": "rm ./data/cache/*.php && rm ./data/logs/*.log",
     "alter": "./vendor/bin/doctrine-module orm:schema-tool:update --force",
-    "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push"
+    "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push",
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+    "upload-coverage": "coveralls -v"
+  },
+  "extra": {
+    "zf": {
+      "component": "MSBios\\Doctrine"
+    }
   }
 }
