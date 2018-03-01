@@ -30,7 +30,7 @@
     "msbios/json": "^1.0"
   },
   "require-dev": {
-    "zendframework/zend-router": "^3.0",
+    "msbios/application": "^1.0",
     "msbios/debug": "^1.0",
     "msbios/test": "^1.0"
   },
