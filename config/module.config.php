@@ -11,7 +11,9 @@ return [
             'orm_default' => [
                 'types' => [
                     DBAL\Types\ArrayResolverType::NAME =>
-                        DBAL\Types\ArrayResolverType::class
+                        DBAL\Types\ArrayResolverType::class,
+                    DBAL\Types\PublishingStateType::NAME =>
+                        DBAL\Types\PublishingStateType::class
                 ],
                 'datetime_functions' => [
                     'date' => ORM\Query\AST\Functions\DateFunction::class,
