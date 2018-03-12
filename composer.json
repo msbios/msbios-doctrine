@@ -25,9 +25,9 @@
   },
   "require": {
     "doctrine/doctrine-orm-module": "^1.1",
-    "msbios/msbios": "^1.0",
     "msbios/stdlib": "^1.0",
-    "msbios/json": "^1.0"
+    "msbios/json": "^1.0",
+    "msbios/form": "^1.0"
   },
   "require-dev": {
     "msbios/application": "^1.0",

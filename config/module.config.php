@@ -5,6 +5,8 @@
  */
 namespace MSBios\Doctrine;
 
+use Zend\ServiceManager\Factory\InvokableFactory;
+
 return [
     'doctrine' => [
         'configuration' => [
@@ -46,8 +48,16 @@ return [
         ],
     ],
 
+    'form_elements' => [
+        'factories' => [
+            Form\Element\PublishingState::class =>
+                InvokableFactory::class,
+        ]
+    ],
+
     Module::class => [
         'listeners' => [
+            // ...
         ],
     ]
 ];

@@ -6,6 +6,9 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
+        'Zend\Log',
+        'Zend\Session',
+        'MSBios\Form',
         'MSBios\Application',
         'Zend\Mvc\Plugin\FilePrg',
         'Zend\Mvc\Plugin\FlashMessenger',
@@ -21,6 +24,7 @@ return [
         'MSBios\Navigation',
         'Zend\Navigation',
         'DoctrineModule'
+        'ZendDeveloperTools',
     ],
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => [
