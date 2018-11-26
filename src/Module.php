@@ -32,10 +32,10 @@ class Module implements ModuleInterface
     }
 
     /**
-     * Listen to the bootstrap event
+     * @inheritdoc
      *
      * @param EventInterface $e
-     * @return array
+     * @throws \Doctrine\DBAL\DBALException
      */
     public function onBootstrap(EventInterface $e)
     {
@@ -54,7 +54,7 @@ class Module implements ModuleInterface
     }
 
     /**
-     * Return an array for passing to Zend\Loader\AutoloaderFactory.
+     * @inheritdoc
      *
      * @return array
      */

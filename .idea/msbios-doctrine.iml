@@ -1,7 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/container-interop/container-interop" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/digitalnature/php-ref" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/collections" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/common" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/doctrine-module" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/doctrine-orm-module" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/orm" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/kriswallsmith/assetic" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/linkorb/jsmin-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/matycz/lemo-tracy" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/application" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/assetic" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/form" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/i18n" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/json" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/msbios" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/navigation" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/stdlib" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/test" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/theme" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/view" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/widget" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/patchwork/utf8" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/pdepend/pdepend" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpmd/phpmd" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/san/san-session-toolbar" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/squizlabs/php_codesniffer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/dependency-injection" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tracy/tracy" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-authentication" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-component-installer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-config" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-console" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-developer-tools" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-dom" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-escaper" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-eventmanager" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-filter" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-form" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-http" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-hydrator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-i18n" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-inputfilter" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-json" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-loader" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-modulemanager" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-mvc" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-mvc-plugin-fileprg" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-mvc-plugin-flashmessenger" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-mvc-plugin-identity" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-mvc-plugin-prg" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-navigation" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-paginator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-router" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-servicemanager" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-session" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-stdlib" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-test" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-uri" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-view" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zfcampus/zf-development-mode" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
@@ -11,26 +123,6 @@
         </CLASSES>
         <SOURCES>
           <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="PHARS">
-        <CLASSES>
-          <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
-        </CLASSES>
-        <SOURCES>
-          <root url="phar://$MODULE_DIR$/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library name="PHP Runtime" type="php">
-        <CLASSES>
-          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
-        </CLASSES>
-        <SOURCES>
-          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
         </SOURCES>
       </library>
     </orderEntry>

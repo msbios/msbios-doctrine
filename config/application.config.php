@@ -6,7 +6,9 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-        'Zend\Log',
+        'Zend\Paginator',
+        'MSBios\Cache',
+        'Zend\Serializer',
         'Zend\Session',
         'MSBios\Form',
         'MSBios\Application',
@@ -25,6 +27,7 @@ return [
         'Zend\Navigation',
         'DoctrineModule'
         'ZendDeveloperTools',
+        'DoctrineORMModule',
     ],
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => [
@@ -56,7 +59,5 @@ return [
         'module_map_cache_key' => 'application.module.cache',
         // The path in which to cache merged configuration.
         'cache_dir' => 'data/cache/',
-
     ],
-
 ];

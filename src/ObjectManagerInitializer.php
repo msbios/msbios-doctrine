@@ -3,7 +3,7 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-namespace MSBios\Doctrine\Initializer;
+namespace MSBios\Doctrine;
 
 use Doctrine\ORM\EntityManager;
 use DoctrineModule\Persistence\ObjectManagerAwareInterface;
@@ -12,7 +12,7 @@ use Zend\ServiceManager\Initializer\InitializerInterface;
 
 /**
  * Class ObjectManagerInitializer
- * @package MSBios\Doctrine\Initializer
+ * @package MSBios\Doctrine
  */
 class ObjectManagerInitializer implements InitializerInterface
 {

@@ -5,6 +5,7 @@
  */
 namespace MSBios\Doctrine;
 
+use Doctrine\DBAL\Driver\PDOMySql\Driver;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
@@ -33,7 +34,7 @@ return [
         ],
         'connection' => [
             'orm_default' => [
-                'driverClass' => \Doctrine\DBAL\Driver\PDOMySql\Driver::class,
+                'driverClass' => Driver::class,
                 'params' => [
                     'host' => 'localhost',
                     'user' => null,
@@ -53,11 +54,5 @@ return [
             Form\Element\PublishingState::class =>
                 InvokableFactory::class,
         ]
-    ],
-
-    Module::class => [
-        'listeners' => [
-            // ...
-        ],
     ]
 ];

@@ -10,6 +10,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 /**
  * Trait ObjectManagerAwareTrait
  * @package MSBios\Doctrine
+ * @deprecated DoctrineModule\Persistence\ProvidesObjectManager
  */
 trait ObjectManagerAwareTrait
 {
