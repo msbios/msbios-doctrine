@@ -21,9 +21,11 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 class Module implements ModuleInterface
 {
     /** @const VERSION */
-    const VERSION = '1.0.11';
+    const VERSION = '1.0.12';
 
     /**
+     * @inheritdoc
+     *
      * @return mixed
      */
     public function getConfig()
