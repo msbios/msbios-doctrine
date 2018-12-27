@@ -41,9 +41,7 @@
       "@cs-check",
       "phpunit --colors=always"
     ],
-    "cleanup": "rm ./data/cache/*.php && rm ./data/logs/*.log",
     "alter": "./vendor/bin/doctrine-module orm:schema-tool:update --force",
-    "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push",
     "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
     "upload-coverage": "coveralls -v"
   },
