@@ -16,6 +16,8 @@ class PublishingState extends Select
 {
     /**
      * @inheritdoc
+     *
+     * @return $this|void
      */
     public function init()
     {
@@ -26,5 +28,7 @@ class PublishingState extends Select
             PublishingStateType::PUBLISHING_STATE_PREVIEW => _('Preview'),
             PublishingStateType::PUBLISHING_STATE_PUBLISHED => _('Published'),
         ]);
+
+        return $this;
     }
 }

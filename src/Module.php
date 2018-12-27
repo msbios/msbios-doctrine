@@ -7,18 +7,14 @@ namespace MSBios\Doctrine;
 
 use Doctrine\DBAL\Platforms\MySqlPlatform;
 use Doctrine\ORM\EntityManager;
-use MSBios\ModuleInterface;
 use Zend\EventManager\EventInterface;
-use Zend\Loader\AutoloaderFactory;
-use Zend\Loader\StandardAutoloader;
-use Zend\Mvc\ApplicationInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Zend\ModuleManager\Feature\BootstrapListenerInterface;
 
 /**
  * Class Module
  * @package MSBios\Doctrine
  */
-class Module implements ModuleInterface
+class Module extends \MSBios\Module implements BootstrapListenerInterface
 {
     /** @const VERSION */
     const VERSION = '1.0.13';
@@ -26,11 +22,21 @@ class Module implements ModuleInterface
     /**
      * @inheritdoc
      *
-     * @return mixed
+     * @return string
      */
-    public function getConfig()
+    protected function getDir()
     {
-        return include __DIR__ . '/../config/module.config.php';
+        return __DIR__;
+    }
+
+    /**
+     * @inheritdoc
+     *
+     * @return string
+     */
+    protected function getNamespace()
+    {
+        return __NAMESPACE__;
     }
 
     /**
@@ -41,33 +47,13 @@ class Module implements ModuleInterface
      */
     public function onBootstrap(EventInterface $e)
     {
-        /** @var ApplicationInterface $target */
-        $target = $e->getTarget();
-
-        /** @var ServiceLocatorInterface $serviceManager */
-        $serviceManager = $target->getServiceManager();
-
         /** @var MySqlPlatform $platform */
-        $platform = $serviceManager
+        $platform = $e
+            ->getTarget()
+            ->getServiceManager()
             ->get(EntityManager::class)
             ->getConnection()
             ->getDatabasePlatform();
         $platform->registerDoctrineTypeMapping('enum', 'string');
-    }
-
-    /**
-     * @inheritdoc
-     *
-     * @return array
-     */
-    public function getAutoloaderConfig()
-    {
-        return [
-            AutoloaderFactory::STANDARD_AUTOLOADER => [
-                StandardAutoloader::LOAD_NS => [
-                    __NAMESPACE__ => __DIR__,
-                ],
-            ],
-        ];
     }
 }

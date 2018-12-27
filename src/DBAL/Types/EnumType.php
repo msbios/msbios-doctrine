@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
@@ -8,7 +7,7 @@ namespace MSBios\Doctrine\DBAL\Types;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\Type;
-use MSBios\Doctrine\DBAL\Types\Exception\InvalidArgumentException;
+use MSBios\Doctrine\InvalidArgumentException;
 
 /**
  * Class EnumType
@@ -22,11 +21,10 @@ abstract class EnumType extends Type
     abstract public function getValues();
 
     /**
-     * Gets the SQL declaration snippet for a field of this type.
+     * @inheritdoc
      *
-     * @param array $fieldDeclaration The field declaration.
-     * @param \Doctrine\DBAL\Platforms\AbstractPlatform $platform The currently used database platform.
-     *
+     * @param array $fieldDeclaration
+     * @param AbstractPlatform $platform
      * @return string
      */
     public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform)
@@ -41,6 +39,8 @@ abstract class EnumType extends Type
     }
 
     /**
+     * @inheritdoc
+     *
      * @param mixed $value
      * @param AbstractPlatform $platform
      * @return mixed

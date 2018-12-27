@@ -30,12 +30,15 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/json" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/msbios" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/navigation" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/session" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/stdlib" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/test" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/theme" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/view" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/msbios/widget" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ocramius/package-versions" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/patchwork/utf8" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pdepend/pdepend" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phar-io/manifest" />
@@ -69,6 +72,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/squizlabs/php_codesniffer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/config" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/contracts" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/dependency-injection" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />

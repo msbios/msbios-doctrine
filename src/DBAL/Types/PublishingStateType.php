@@ -12,7 +12,6 @@ namespace MSBios\Doctrine\DBAL\Types;
  */
 class PublishingStateType extends EnumType
 {
-
     /** @const NAME */
     const NAME = 'publishing_state';
 
@@ -21,6 +20,8 @@ class PublishingStateType extends EnumType
     const PUBLISHING_STATE_PUBLISHED = 'PUBLISHED';
 
     /**
+     * @inheritdoc
+     *
      * @return array
      */
     public function getValues()
@@ -33,11 +34,9 @@ class PublishingStateType extends EnumType
     }
 
     /**
-     * Gets the name of this type.
+     * @inheritdoc
      *
      * @return string
-     *
-     * @todo Needed?
      */
     public function getName()
     {

@@ -19,11 +19,9 @@ class ArrayResolverType extends JsonType
     const NAME = 'array_resolver';
 
     /**
-     * Gets the name of this type.
+     * @inheritdoc
      *
      * @return string
-     *
-     * @todo Needed?
      */
     public function getName()
     {
@@ -31,11 +29,12 @@ class ArrayResolverType extends JsonType
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      *
-     * @param mixed $value
+     * @param $value
      * @param AbstractPlatform $platform
-     * @return mixed|null|string
+     * @return false|mixed|string|null
+     * @throws \Doctrine\DBAL\Types\ConversionException
      */
     public function convertToDatabaseValue($value, AbstractPlatform $platform)
     {
@@ -47,11 +46,12 @@ class ArrayResolverType extends JsonType
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      *
-     * @param mixed $value
+     * @param $value
      * @param AbstractPlatform $platform
-     * @return Store
+     * @return mixed|Store|null
+     * @throws \Doctrine\DBAL\Types\ConversionException
      */
     public function convertToPHPValue($value, AbstractPlatform $platform)
     {

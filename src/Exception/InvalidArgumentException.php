@@ -4,13 +4,13 @@
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
 
-namespace MSBios\Doctrine\DBAL\Types\Exception;
+namespace MSBios\Doctrine;
 
 /**
  * Class InvalidArgumentException
- * @package MSBios\Doctrine\DBAL\Types\Exception
+ * @package MSBios\Doctrine
  */
 class InvalidArgumentException extends \InvalidArgumentException
 {
-    // Some Class Realization
+    // ...
 }
