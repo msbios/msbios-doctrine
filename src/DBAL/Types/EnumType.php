@@ -16,6 +16,7 @@ use MSBios\Doctrine\InvalidArgumentException;
 abstract class EnumType extends Type
 {
     /**
+     * Value variants
      * @return array
      */
     abstract public function getValues();

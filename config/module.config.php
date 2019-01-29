@@ -16,19 +16,27 @@ return [
                     DBAL\Types\ArrayResolverType::NAME =>
                         DBAL\Types\ArrayResolverType::class,
                     DBAL\Types\PublishingStateType::NAME =>
-                        DBAL\Types\PublishingStateType::class
+                        DBAL\Types\PublishingStateType::class,
+                    DBAL\Types\GenderType::NAME =>
+                        DBAL\Types\GenderType::class
                 ],
                 'datetime_functions' => [
-                    'date' => ORM\Query\AST\Functions\DateFunction::class,
-                    'day' => ORM\Query\AST\Functions\DayFunction::class,
-                    'year' => ORM\Query\AST\Functions\YearFunction::class,
+                    'date' =>
+                        ORM\Query\AST\Functions\DateFunction::class,
+                    'day' =>
+                        ORM\Query\AST\Functions\DayFunction::class,
+                    'year' =>
+                        ORM\Query\AST\Functions\YearFunction::class,
                 ],
                 'string_functions' => [
-                    'concat_ws' => ORM\Query\AST\Functions\ConcatWSFunction::class,
-                    'month' => ORM\Query\AST\Functions\MonthFunction::class,
+                    'concat_ws' =>
+                        ORM\Query\AST\Functions\ConcatWSFunction::class,
+                    'month' =>
+                        ORM\Query\AST\Functions\MonthFunction::class,
                 ],
                 'numeric_functions' => [
-                    'geo' => ORM\Query\AST\Functions\GeoFunction::class
+                    'geo' =>
+                        ORM\Query\AST\Functions\GeoFunction::class
                 ],
             ],
         ],
@@ -51,6 +59,8 @@ return [
 
     'form_elements' => [
         'factories' => [
+            Form\Element\Gender::class =>
+                InvokableFactory::class,
             Form\Element\PublishingState::class =>
                 InvokableFactory::class,
         ]

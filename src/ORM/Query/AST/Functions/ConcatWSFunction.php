@@ -16,16 +16,18 @@ use Doctrine\ORM\Query\SqlWalker;
  */
 class ConcatWSFunction extends FunctionNode
 {
-    /** @var   */
+    /** @var string */
     public $firstStringPrimary;
 
-    /** @var   */
+    /** @var string */
     public $secondStringPrimary;
 
     /** @var array */
     public $concatExpressions = [];
 
     /**
+     * @inheritdoc
+     *
      * @param SqlWalker $sqlWalker
      * @return string
      */
@@ -42,7 +44,10 @@ class ConcatWSFunction extends FunctionNode
     }
 
     /**
+     * @inheritdoc
+     *
      * @param Parser $parser
+     * @throws \Doctrine\ORM\Query\QueryException
      */
     public function parse(Parser $parser)
     {
@@ -53,10 +58,12 @@ class ConcatWSFunction extends FunctionNode
         $parser->match(Lexer::T_COMMA);
         $this->secondStringPrimary = $parser->StringPrimary();
         $this->concatExpressions[] = $this->secondStringPrimary;
+
         while ($parser->getLexer()->isNextToken(Lexer::T_COMMA)) {
             $parser->match(Lexer::T_COMMA);
             $this->concatExpressions[] = $parser->StringPrimary();
         }
+
         $parser->match(Lexer::T_CLOSE_PARENTHESIS);
     }
 }

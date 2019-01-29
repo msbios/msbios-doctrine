@@ -12,12 +12,17 @@ use Doctrine\ORM\Query\SqlWalker;
 
 /**
  * Class DateFunction
+ *
  * @package MSBios\Doctrine\ORM\Query\AST\Functions
  */
 class DateFunction extends FunctionNode
 {
+    /** @var int */
     public $date;
+
     /**
+     * @inheritdoc
+     *
      * @param SqlWalker $sqlWalker
      * @return string
      */
@@ -25,8 +30,12 @@ class DateFunction extends FunctionNode
     {
         return "DATE(" . $sqlWalker->walkArithmeticPrimary($this->date) . ")";
     }
+
     /**
+     * @inheritdoc
+     *
      * @param Parser $parser
+     * @throws \Doctrine\ORM\Query\QueryException
      */
     public function parse(Parser $parser)
     {

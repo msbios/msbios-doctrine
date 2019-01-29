@@ -16,9 +16,12 @@ use Doctrine\ORM\Query\SqlWalker;
  */
 class YearFunction extends FunctionNode
 {
+    /** @var int */
     public $date;
 
     /**
+     * @inheritdoc
+     *
      * @param SqlWalker $sqlWalker
      * @return string
      */
@@ -28,7 +31,10 @@ class YearFunction extends FunctionNode
     }
 
     /**
+     * @inheritdoc
+     *
      * @param Parser $parser
+     * @throws \Doctrine\ORM\Query\QueryException
      */
     public function parse(Parser $parser)
     {

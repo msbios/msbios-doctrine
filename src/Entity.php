@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Class Entity
+ *
  * @package MSBios\Doctrine
  * @ORM\MappedSuperclass
  */

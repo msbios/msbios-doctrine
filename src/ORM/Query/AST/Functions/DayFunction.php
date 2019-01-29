@@ -16,7 +16,9 @@ use Doctrine\ORM\Query\SqlWalker;
  */
 class DayFunction extends FunctionNode
 {
+    /** @var int */
     public $date;
+
     /**
      * @param SqlWalker $sqlWalker
      * @return string
@@ -25,8 +27,12 @@ class DayFunction extends FunctionNode
     {
         return "DAY(" . $sqlWalker->walkArithmeticPrimary($this->date) . ")";
     }
+
     /**
+     * @inheritdoc
+     *
      * @param Parser $parser
+     * @throws \Doctrine\ORM\Query\QueryException
      */
     public function parse(Parser $parser)
     {

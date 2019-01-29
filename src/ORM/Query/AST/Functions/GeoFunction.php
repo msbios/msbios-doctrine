@@ -21,7 +21,10 @@ class GeoFunction extends FunctionNode
     protected $lngOrigin;
     protected $latDestination;
     protected $lngDestination;
+
     /**
+     * @inheritdoc
+     *
      * @param SqlWalker $sqlWalker
      * @return string
      */
@@ -45,8 +48,12 @@ class GeoFunction extends FunctionNode
             $sqlWalker->walkArithmeticPrimary($this->lngDestination)
         );
     }
+
     /**
+     * @inheritdoc
+     *
      * @param Parser $parser
+     * @throws \Doctrine\ORM\Query\QueryException
      */
     public function parse(Parser $parser)
     {

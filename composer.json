@@ -30,7 +30,6 @@
     "msbios/form": "^1.0"
   },
   "require-dev": {
-    "msbios/application": "^1.0",
     "msbios/debug": "^1.0",
     "msbios/test": "^1.0"
   },
@@ -41,7 +40,6 @@
       "@cs-check",
       "phpunit --colors=always"
     ],
-    "alter": "./vendor/bin/doctrine-module orm:schema-tool:update --force",
     "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
     "upload-coverage": "coveralls -v"
   },
