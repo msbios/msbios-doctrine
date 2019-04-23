@@ -6,26 +6,10 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-        'MSBios\Session',
         'Zend\Paginator',
-        'MSBios\Cache',
-        'Zend\Serializer',
         'Zend\Session',
         'MSBios\Form',
-        'MSBios\Application',
-        'Zend\Mvc\Plugin\FilePrg',
-        'Zend\Mvc\Plugin\FlashMessenger',
-        'Zend\Mvc\Plugin\Identity',
-        'Zend\Mvc\Plugin\Prg',
         'Zend\Router',
-        'MSBios\Theme',
-        'MSBios\Widget',
-        'MSBios\View',
-        'MSBios\Assetic',
-        'MSBios\I18n',
-        'Zend\I18n',
-        'MSBios\Navigation',
-        'Zend\Navigation',
         'DoctrineModule'
         'ZendDeveloperTools',
         'DoctrineORMModule',
