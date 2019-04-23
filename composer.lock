@@ -1098,16 +1098,16 @@
         },
         {
             "name": "msbios/form",
-            "version": "v1.0.8",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-form.git",
-                "reference": "c35894ea2e4dd28aa89ad459706e3a13f98336f2"
+                "reference": "cc7ba2e80db9013583c12c897f689857359715c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-form/zipball/c35894ea2e4dd28aa89ad459706e3a13f98336f2",
-                "reference": "c35894ea2e4dd28aa89ad459706e3a13f98336f2",
+                "url": "https://api.github.com/repos/msbios/msbios-form/zipball/cc7ba2e80db9013583c12c897f689857359715c4",
+                "reference": "cc7ba2e80db9013583c12c897f689857359715c4",
                 "shasum": ""
             },
             "require": {
@@ -1144,7 +1144,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2019-01-28T14:37:18+00:00"
+            "time": "2019-04-23T08:38:11+00:00"
         },
         {
             "name": "msbios/json",
