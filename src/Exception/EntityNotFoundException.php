@@ -6,11 +6,13 @@
 
 namespace MSBios\Doctrine;
 
+use MSBios\Exception\DomainException;
+
 /**
- * Class InvalidArgumentException
+ * Class EntityNotFoundException
  * @package MSBios\Doctrine
  */
-class InvalidArgumentException extends \MSBios\Exception\InvalidArgumentException
+class EntityNotFoundException extends DomainException
 {
     // ...
 }

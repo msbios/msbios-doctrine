@@ -27,7 +27,8 @@
     "doctrine/doctrine-orm-module": "^2.1",
     "msbios/stdlib": "^1.0",
     "msbios/json": "^1.0",
-    "msbios/form": "^1.0"
+    "msbios/form": "^1.0",
+    "msbios/exception": "^1.0"
   },
   "require-dev": {
     "msbios/debug": "^1.0",
@@ -45,7 +46,8 @@
   },
   "extra": {
     "zf": {
-      "component": "MSBios\\Doctrine"
+      "component": "MSBios\\Doctrine",
+      "config-provider": "MSBios\\Doctrine\\ConfigProvider"
     }
   }
 }

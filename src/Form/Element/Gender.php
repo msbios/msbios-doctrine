@@ -18,9 +18,9 @@ class Gender extends Select
     /**
      * @inheritdoc
      *
-     * @return $this|void
+     * @return $this
      */
-    public function init()
+    public function init(): self
     {
         parent::init();
 

@@ -19,6 +19,8 @@ class MonthFunction extends FunctionNode
     public $date;
 
     /**
+     * @inheritdoc
+     * 
      * @param SqlWalker $sqlWalker
      * @return string
      */
@@ -26,8 +28,12 @@ class MonthFunction extends FunctionNode
     {
         return "MONTH(" . $sqlWalker->walkArithmeticPrimary($this->date) . ")";
     }
+
     /**
+     * @inheritdoc
+     *
      * @param Parser $parser
+     * @throws \Doctrine\ORM\Query\QueryException
      */
     public function parse(Parser $parser)
     {

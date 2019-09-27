@@ -7,17 +7,15 @@ namespace MSBios\Doctrine;
 
 use Doctrine\DBAL\Platforms\MySqlPlatform;
 use Doctrine\ORM\EntityManager;
-use Zend\EventManager\EventInterface;
-use Zend\ModuleManager\Feature\BootstrapListenerInterface;
 
 /**
  * Class Module
  * @package MSBios\Doctrine
  */
-class Module extends \MSBios\Module implements BootstrapListenerInterface
+class Module extends \MSBios\Module
 {
     /** @const VERSION */
-    const VERSION = '1.0.18';
+    const VERSION = '1.0.20';
 
     /**
      * @inheritdoc
@@ -42,18 +40,38 @@ class Module extends \MSBios\Module implements BootstrapListenerInterface
     /**
      * @inheritdoc
      *
-     * @param EventInterface $e
-     * @throws \Doctrine\DBAL\DBALException
+     * @return array|mixed|\Traversable
      */
-    public function onBootstrap(EventInterface $e)
+    public function getConfig()
     {
-        /** @var MySqlPlatform $platform */
-        $platform = $e
-            ->getTarget()
-            ->getServiceManager()
-            ->get(EntityManager::class)
-            ->getConnection()
-            ->getDatabasePlatform();
-        $platform->registerDoctrineTypeMapping('enum', 'string');
+        /** @var ConfigProvider $provider */
+        $provider = new ConfigProvider;
+        return [
+            'service_manager' => $provider->getDependencyConfig(),
+            'doctrine' => $provider->getDoctrineConfig(),
+            'form_elements' => $provider->getFormElementsConfig(),
+            'listeners' => [
+                ListenerAggregate::class =>
+                    ListenerAggregate::class
+            ]
+        ];
     }
+
+    ///**
+    // * @inheritdoc
+    // *
+    // * @param EventInterface $e
+    // * @throws \Doctrine\DBAL\DBALException
+    // */
+    //public function onBootstrap(EventInterface $e)
+    //{
+    //    /** @var MySqlPlatform $platform */
+    //    $platform = $e
+    //        ->getTarget()
+    //        ->getServiceManager()
+    //        ->get(EntityManager::class)
+    //        ->getConnection()
+    //        ->getDatabasePlatform();
+    //    $platform->registerDoctrineTypeMapping('enum', 'string');
+    //}
 }
