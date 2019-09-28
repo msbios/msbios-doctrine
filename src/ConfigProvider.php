@@ -7,6 +7,7 @@
 namespace MSBios\Doctrine;
 
 use Doctrine\DBAL\Driver\PDOMySql\Driver;
+use Ramsey\Uuid\Doctrine\UuidType;
 use Zend\ServiceManager\Factory\InvokableFactory;
 use Zend\Stdlib\ArrayUtils;
 
@@ -58,7 +59,8 @@ class ConfigProvider extends \MSBios\ConfigProvider
                         DBAL\Types\PublishingStateType::NAME =>
                             DBAL\Types\PublishingStateType::class,
                         DBAL\Types\GenderType::NAME =>
-                            DBAL\Types\GenderType::class
+                            DBAL\Types\GenderType::class,
+                        UuidType::NAME => UuidType::class
                     ],
                     'datetime_functions' => [
                         'date' =>

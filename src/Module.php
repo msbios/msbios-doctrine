@@ -12,7 +12,7 @@ namespace MSBios\Doctrine;
 class Module extends \MSBios\Module
 {
     /** @const VERSION */
-    const VERSION = '1.0.21';
+    const VERSION = '1.0.22';
 
     /**
      * @inheritdoc

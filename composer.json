@@ -28,7 +28,8 @@
     "msbios/stdlib": "^1.0",
     "msbios/json": "^1.0",
     "msbios/form": "^1.0",
-    "msbios/exception": "^1.0"
+    "msbios/exception": "^1.0",
+    "ramsey/uuid-doctrine": "^1.5"
   },
   "require-dev": {
     "msbios/debug": "^1.0",
