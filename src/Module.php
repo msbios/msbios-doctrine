@@ -5,9 +5,6 @@
  */
 namespace MSBios\Doctrine;
 
-use Doctrine\DBAL\Platforms\MySqlPlatform;
-use Doctrine\ORM\EntityManager;
-
 /**
  * Class Module
  * @package MSBios\Doctrine
@@ -15,7 +12,7 @@ use Doctrine\ORM\EntityManager;
 class Module extends \MSBios\Module
 {
     /** @const VERSION */
-    const VERSION = '1.0.20';
+    const VERSION = '1.0.21';
 
     /**
      * @inheritdoc
