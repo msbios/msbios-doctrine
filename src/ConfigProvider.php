@@ -6,7 +6,6 @@
 
 namespace MSBios\Doctrine;
 
-use Doctrine\DBAL\Driver\PDOMySql\Driver;
 use Ramsey\Uuid\Doctrine\UuidType;
 use Zend\ServiceManager\Factory\InvokableFactory;
 use Zend\Stdlib\ArrayUtils;
@@ -84,7 +83,7 @@ class ConfigProvider extends \MSBios\ConfigProvider
             ],
             'connection' => [
                 'orm_default' => [
-                    'driverClass' => Driver::class,
+                    'driverClass' => null, // \Doctrine\DBAL\Driver\PDOMySql\Driver::class,
                     'params' => [
                         'host' => 'localhost',
                         'user' => null,
@@ -92,7 +91,7 @@ class ConfigProvider extends \MSBios\ConfigProvider
                         'dbname' => null,
                         'charset' => 'utf8',
                         'driverOptions' => [
-                            \PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
+                            // \PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
                         ]
                     ]
                 ],

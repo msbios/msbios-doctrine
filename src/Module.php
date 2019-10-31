@@ -12,7 +12,7 @@ namespace MSBios\Doctrine;
 class Module extends \MSBios\Module
 {
     /** @const VERSION */
-    const VERSION = '1.0.22';
+    const VERSION = '1.0.23';
 
     /**
      * @inheritdoc
@@ -53,22 +53,4 @@ class Module extends \MSBios\Module
             ]
         ];
     }
-
-    ///**
-    // * @inheritdoc
-    // *
-    // * @param EventInterface $e
-    // * @throws \Doctrine\DBAL\DBALException
-    // */
-    //public function onBootstrap(EventInterface $e)
-    //{
-    //    /** @var MySqlPlatform $platform */
-    //    $platform = $e
-    //        ->getTarget()
-    //        ->getServiceManager()
-    //        ->get(EntityManager::class)
-    //        ->getConnection()
-    //        ->getDatabasePlatform();
-    //    $platform->registerDoctrineTypeMapping('enum', 'string');
-    //}
 }

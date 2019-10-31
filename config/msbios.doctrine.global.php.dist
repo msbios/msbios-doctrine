@@ -1,14 +1,23 @@
 <?php
+/**
+ * @access protected
+ * @author Judzhin Miles <info[woof-woof]msbios.com>
+ */
+namespace MSBios\Doctrine;
 
 return [
     'doctrine' => [
         'connection' => [
             'orm_default' => [
+                'driverClass' => \Doctrine\DBAL\Driver\PDOMySql\Driver::class,
                 'params' => [
                     'host' => '',
                     'user' => '',
                     'password' => '',
                     'dbname' => '',
+                    'driverOptions' => [
+                        \PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
+                    ]
                 ],
             ],
         ],
