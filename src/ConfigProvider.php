@@ -6,9 +6,10 @@
 
 namespace MSBios\Doctrine;
 
+use Laminas\ServiceManager\Factory\InvokableFactory;
+use Laminas\Stdlib\ArrayUtils;
 use Ramsey\Uuid\Doctrine\UuidType;
-use Zend\ServiceManager\Factory\InvokableFactory;
-use Zend\Stdlib\ArrayUtils;
+
 
 /**
  * Class ConfigProvider

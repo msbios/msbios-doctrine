@@ -24,16 +24,15 @@
     }
   },
   "require": {
-    "doctrine/doctrine-orm-module": "^2.1",
-    "msbios/stdlib": "^1.0",
-    "msbios/json": "^1.0",
-    "msbios/form": "^1.0",
-    "msbios/exception": "^1.0",
-    "ramsey/uuid-doctrine": "^1.5"
+    "ramsey/uuid-doctrine": "^1.5",
+    "doctrine/doctrine-module": "^2.1",
+    "msbios/json": "^2.0",
+    "msbios/stdlib": "^2.0",
+    "msbios/form": "^2.0"
   },
   "require-dev": {
-    "msbios/debug": "^1.0",
-    "msbios/test": "^1.0"
+    "msbios/test": "^2.0",
+    "msbios/debug": "^2.0"
   },
   "scripts": {
     "cs-check": "phpcs",

@@ -5,8 +5,8 @@
  */
 namespace MSBios\Doctrine\Form\Element;
 
+use Laminas\Form\Element\Select;
 use MSBios\Doctrine\DBAL\Types\PublishingStateType;
-use Zend\Form\Element\Select;
 
 /**
  * Class PublishingState
