@@ -17,8 +17,8 @@ trait IdentifierAwareTrait
     /**
      * @var integer
      *
-     * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
+     * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
@@ -26,16 +26,16 @@ trait IdentifierAwareTrait
     /**
      * @return int
      */
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
 
     /**
-     * @param $id
+     * @param int $id
      * @return $this
      */
-    public function setId($id)
+    public function setId(int $id): self
     {
         $this->id = $id;
         return $this;

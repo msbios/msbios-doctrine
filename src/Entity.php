@@ -13,7 +13,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @package MSBios\Doctrine
  * @ORM\MappedSuperclass
  */
-abstract class Entity implements EntityInterface, IdentifierableAwareInterface
+abstract class Entity implements EntityInterface
 {
-    use IdentifierAwareTrait;
+    // ...
 }

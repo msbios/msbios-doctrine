@@ -1,25 +1,24 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: judzhin
- * Date: 9/27/19
- * Time: 9:12 PM
+ * @access protected
+ * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-
 namespace MSBios\Doctrine;
 
+use Doctrine\DBAL\DBALException;
 use Doctrine\DBAL\Platforms\MySqlPlatform;
 use Doctrine\ORM\EntityManager;
-use Zend\EventManager\AbstractListenerAggregate;
-use Zend\EventManager\EventInterface;
-use Zend\EventManager\EventManagerInterface;
-use Zend\Mvc\MvcEvent;
+use Laminas\EventManager\AbstractListenerAggregate;
+use Laminas\EventManager\EventInterface;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\ModuleManager\Feature\BootstrapListenerInterface;
+use Laminas\Mvc\MvcEvent;
 
 /**
  * Class ListenerAggregate
  * @package MSBios\Doctrine
  */
-class ListenerAggregate extends AbstractListenerAggregate
+class ListenerAggregate extends AbstractListenerAggregate implements BootstrapListenerInterface
 {
     /**
      * @inheritdoc
@@ -34,8 +33,10 @@ class ListenerAggregate extends AbstractListenerAggregate
     }
 
     /**
+     * @inheritDoc
+     *
      * @param EventInterface $e
-     * @throws \Doctrine\DBAL\DBALException
+     * @throws DBALException
      */
     public function onBootstrap(EventInterface $e)
     {

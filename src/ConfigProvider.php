@@ -8,8 +8,18 @@ namespace MSBios\Doctrine;
 
 use Laminas\ServiceManager\Factory\InvokableFactory;
 use Laminas\Stdlib\ArrayUtils;
+use Oro\ORM\Query\AST\Functions\Cast;
+use Oro\ORM\Query\AST\Functions\DateTime\ConvertTz;
+use Oro\ORM\Query\AST\Functions\Numeric\Pow;
+use Oro\ORM\Query\AST\Functions\Numeric\Round;
+use Oro\ORM\Query\AST\Functions\Numeric\Sign;
+use Oro\ORM\Query\AST\Functions\Numeric\TimestampDiff;
+use Oro\ORM\Query\AST\Functions\SimpleFunction;
+use Oro\ORM\Query\AST\Functions\String\ConcatWs;
+use Oro\ORM\Query\AST\Functions\String\DateFormat;
+use Oro\ORM\Query\AST\Functions\String\GroupConcat;
+use Oro\ORM\Query\AST\Functions\String\Replace;
 use Ramsey\Uuid\Doctrine\UuidType;
-
 
 /**
  * Class ConfigProvider
@@ -64,37 +74,79 @@ class ConfigProvider extends \MSBios\ConfigProvider
                     ],
                     'datetime_functions' => [
                         'date' =>
-                            ORM\Query\AST\Functions\DateFunction::class,
-                        'day' =>
-                            ORM\Query\AST\Functions\DayFunction::class,
-                        'year' =>
-                            ORM\Query\AST\Functions\YearFunction::class,
+                            SimpleFunction::class,
+                        'time' =>
+                            SimpleFunction::class,
+                        'timestamp' =>
+                            SimpleFunction::class,
+                        'convert_tz' =>
+                            ConvertTz::class,
                     ],
                     'string_functions' => [
+                        'md5' =>
+                            SimpleFunction::class,
+                        'group_concat' =>
+                            GroupConcat::class,
+                        'cast' =>
+                            Cast::class,
                         'concat_ws' =>
-                            ORM\Query\AST\Functions\ConcatWSFunction::class,
-                        'month' =>
-                            ORM\Query\AST\Functions\MonthFunction::class,
+                            ConcatWs::class,
+                        'replace' =>
+                            Replace::class,
+                        'date_format' =>
+                            DateFormat::class
                     ],
                     'numeric_functions' => [
                         'geo' =>
-                            ORM\Query\AST\Functions\GeoFunction::class
+                            ORM\Query\AST\Functions\GeoFunction::class,
+                        'timestampdiff' =>
+                            TimestampDiff::class,
+                        'dayofyear' =>
+                            SimpleFunction::class,
+                        'dayofmonth' =>
+                            SimpleFunction::class,
+                        'dayofweek' =>
+                            SimpleFunction::class,
+                        'week' =>
+                            SimpleFunction::class,
+                        'day' =>
+                            SimpleFunction::class,
+                        'hour' =>
+                            SimpleFunction::class,
+                        'minute' =>
+                            SimpleFunction::class,
+                        'month' =>
+                            SimpleFunction::class,
+                        'quarter' =>
+                            SimpleFunction::class,
+                        'second' =>
+                            SimpleFunction::class,
+                        'year' =>
+                            SimpleFunction::class,
+                        'sign' =>
+                            Sign::class,
+                        'pow' =>
+                            Pow::class,
+                        'round' =>
+                            Round::class,
+                        'ceil' =>
+                            SimpleFunction::class,
                     ],
                 ],
             ],
             'connection' => [
                 'orm_default' => [
-                    'driverClass' => null, // \Doctrine\DBAL\Driver\PDOMySql\Driver::class,
-                    'params' => [
-                        'host' => 'localhost',
-                        'user' => null,
-                        'password' => null,
-                        'dbname' => null,
-                        'charset' => 'utf8',
-                        'driverOptions' => [
-                            // \PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
-                        ]
-                    ]
+                    // 'driverClass' => null, // \Doctrine\DBAL\Driver\PDOMySql\Driver::class,
+                    // 'params' => [
+                    //     'host' => 'localhost',
+                    //     'user' => null,
+                    //     'password' => null,
+                    //     'dbname' => null,
+                    //     'charset' => 'utf8',
+                    //     'driverOptions' => [
+                    //         // \PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'
+                    //     ]
+                    // ]
                 ],
             ],
         ];

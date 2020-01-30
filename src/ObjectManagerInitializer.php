@@ -17,12 +17,12 @@ use Laminas\ServiceManager\Initializer\InitializerInterface;
 class ObjectManagerInitializer implements InitializerInterface
 {
     /**
-     * @inheritdoc
+     * @inheritDoc
      *
      * @param ContainerInterface $container
      * @param object $instance
      */
-    public function __invoke(ContainerInterface $container, $instance)
+    public function __invoke(ContainerInterface $container, $instance): void
     {
         if ($instance instanceof ObjectManagerAwareInterface) {
             $instance->setObjectManager(
@@ -32,12 +32,12 @@ class ObjectManagerInitializer implements InitializerInterface
     }
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      *
      * @param $an_array
-     * @return ObjectManagerInitializer
+     * @return static
      */
-    public static function __set_state($an_array)
+    public static function __set_state($an_array): self
     {
         return new self();
     }
