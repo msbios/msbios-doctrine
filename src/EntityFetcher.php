@@ -24,11 +24,11 @@ class EntityFetcher
     }
 
     /**
-     * @param $filter
+     * @param iterable $filters
      * @param int $page
      * @param int $limit
      */
-    public function all($filter, int $page, int $limit): void
+    public function all(iterable $filters, int $page, int $limit): void
     {
 
     }

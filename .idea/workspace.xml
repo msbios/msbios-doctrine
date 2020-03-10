@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ffec128-2c5c-42a6-95a4-5b0d12793701" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EntityFetcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ORM/AbstractRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntityFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntityFetcher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ORM/AbstractRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ORM/AbstractRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,15 +16,6 @@
     <execution>
       <executable />
     </execution>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>zend-hydra</find>
-      <find>zendframework/zend-hydrator</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/vendor/msbios</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -230,7 +219,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580376147888</updated>
       <workItem from="1580376149809" duration="2048000" />
-      <workItem from="1583834175233" duration="2268000" />
+      <workItem from="1583834175233" duration="6131000" />
     </task>
     <servers />
   </component>
@@ -238,10 +227,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="795" y="271" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1583835974158">
+    <state x="795" y="271" width="412" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1583840942950">
       <screen x="55" y="27" width="1865" height="1053" />
     </state>
-    <state x="795" y="271" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/55.27.1865.1053@55.27.1865.1053" timestamp="1583835974158" />
+    <state x="795" y="271" width="412" height="562" key="#com.intellij.ide.util.MemberChooser/55.27.1865.1053@55.27.1865.1053" timestamp="1583840942950" />
     <state x="736" y="27" width="504" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580377858982">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
